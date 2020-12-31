@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário de Login</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="LoginForm">
-       
-        <h6>Login</h6>
-        
-        <input id="txt1" type="text" placeholder="Login" name="Login" value="">
-        
-        <input id="txt2" type="password" placeholder="Senha" name="pass" value="">
-        
-        <input id="button1" type="button" name="btn" value="Entrar">
-        
-        <center>
-        <a href="#">Criar uma conta</a><br>
-        <a href="#">Esqueci a senha</a>
-        </center>
+
+    <div class="formulario">
+        <div class="wrapper-formulario">            
+            <div class="side-img">
+                <img src="code.jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="img-login">
+                    <img src="user.jpg" alt="">
+                </div>
+
+                <input id="login" type="text" placeholder="Login" name="login"  required>
+                <input id="pass" type="password" placeholder="Senha" name="pass" required>
+                
+                <div class="wrapper-remember"> 
+                    <input type="checkbox">
+                    <label for="remember">Lembre de mim</label>
+                </div>
+               
+                <input id="enter" type="submit" name="btn" value="Entrar">
+                <div class="obs">
+                    <a href="#">Criar uma conta</a>
+                    <a href="#">Esqueci a senha</a>
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>
