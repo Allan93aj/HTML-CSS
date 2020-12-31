@@ -1,81 +1,141 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-image: url(../img/homemdeferro.jpg);
+    box-sizing: border-box;
+}
+
+div,
+form,
+input,
+a{
+    font-family: montserrat !important;
+}
+
+body{
+    background-image: url(fundo.jpg);
     background-repeat: no-repeat;
-    background-position: left center;
     background-size: cover;
     background-attachment: fixed;
-    
+    background-position: center;
 }
 
-#LoginForm{
-    width: 340px;
-    height: 340px;
-    background-color:#333;
-    margin: auto;
-    margin-top: 130px;
-    border-top: 5px solid #1a1aff;
-    padding: 30px;
-    border-radius: 10px;
+.formulario{
+    display: flex;
+    height: 100vh;
+    align-items: center;
 }
 
-#LoginForm h6{
-    margin: 0;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-    height: 40px;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 30px;
-}
-
-#txt1{
+.formulario .wrapper-formulario{
+    max-width: 700px;
     width: 100%;
-    color: black;
-    border: 1px solid blue;
-    background-color: #fff;
-    font-size: px;
-    padding:14px 0px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    background: #fff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-height: 500px;
+    height: 100%;
 }
 
-#txt2{
-    width: 100%;
-    color: black;
-    border: 1px solid blue;
-    background-color: #fff;
-    font-size: 14px;
-    padding: 14px 0px;
-    font-weight: bold;
-    margin-bottom: 14px;
-    border-radius: 5px;
+.formulario .side-img{
+    height: 100%;
+    width: 50%;
 }
 
-#button1{
+.formulario .side-img img{
+    height: 100%;
+    border-radius: 7px 0 0 7px;
     width: 100%;
-    height: 42px;
-    border: ;
-    background-color: #1a1aff;
-    color: white;
+}
+
+.formulario .wrapper-formulario form{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.formulario .wrapper-formulario form .img-login{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.formulario .wrapper-formulario form .img-login img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.formulario form #login,
+.formulario form #pass{
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.24);
+    border-radius: 0;
     font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 5px;
+    color: #000;
+    height: 45px;
+    padding: 0 5px 0 10px;
 }
 
-#LoginForm a{
+.formulario form #enter{
+        width: 100%;
+    margin: 30px auto;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.24);
+    border-radius: 7px;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #66cc00;
+}
+
+.formulario form #enter:hover{
+    background: #336600;
+}
+
+.formulario form #login:focus,
+.formulario form #pass:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.formulario .wrapper-remember{
+    display: flex;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.formulario form label[for="remember"]{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.formulario .obs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario .obs a{
+    font-size: 13px;
+    color: #000;
     text-decoration: none;
-    color: white;
-    font-family: arial;
-    font-size: 15px;
 }
 
-#LoginForm a:hover{
-    color: blue;
-    text-decoration: underline;
+.formulario .obs a:hover{
+    color: #999;
+    text-decoration: underline !important;
 }
